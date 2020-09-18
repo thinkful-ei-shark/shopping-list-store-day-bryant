@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 const store = {
   items: [
     { id: cuid(), name: 'apples', checked: false },
@@ -16,6 +17,7 @@ const generateItemElement = function (item) {
     `;
   }
 
+  //added name editor to line 31
   return `
     <li class='js-item-element' data-item-id='${item.id}'>
       ${itemTitle}
@@ -26,6 +28,8 @@ const generateItemElement = function (item) {
         <button class='shopping-item-delete js-item-delete'>
           <span class='button-label'>delete</span>
         </button>
+        <input type="text" id="name-editor" name="new-name" 
+        placeholder="edit item name">
       </div>
     </li>`;
 };
