@@ -30,6 +30,10 @@ const generateItemElement = function (item) {
         </button>
         <input type="text" id="name-editor" name="new-name" 
         placeholder="edit item name">
+
+        <button class='submit-name-editor js-item-editor'>
+        <span class='button-label'>edit name</span>
+      </button>
       </div>
     </li>`;
 };
